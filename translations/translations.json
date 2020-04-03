@@ -1,0 +1,280 @@
+{
+  "languages": ["sp", "en"],
+  "translation": [
+      {
+        "sp": "Inicio",
+        "en": "Home"
+      },
+      {
+        "sp": "Cobertura",
+        "en": "Coverage"
+      },
+      {
+        "sp": "Resultados Centro",
+        "en": "School Results"
+      },
+      {
+        "sp": "Ciencias",
+        "en": "Science"
+      },
+      {
+        "sp": "Lectura",
+        "en": "Reading"
+      },
+      {
+        "sp": "Matemática",
+        "en": "Math"
+      },
+      {
+        "sp": "Resultados Grado/Grupo",
+        "en": "Grade/Group Results"
+      },
+      {
+        "sp": "Niveles de desempeño",
+        "en": "Performance levels"
+      },
+      //introUI
+      {
+        "sp": "Es una evaluación adaptativa desarrollada para la medición de habilidades de Ciencias, Lectura y Matemática para alumnos de tercer a sexto grado escolar.",
+        "en": "It is an adaptive assessment developed for the measurement of Science, Reading and Mathematics skills for students from third to sixth grade."
+      },
+      {
+        "sp": "SEA + parte de la premisa de que cada niño posee diferentes tiempos y formas de acercarse al conocimiento. Este instrumento se adapta al nivel de cada estudiante que al enfrentarse a la prueba realiza un recorrido propio (de acuerdo a sus respuestas) dentro de un banco de actividades.",
+        "en": "SEA + starts from the premise that each child has different times and ways of approaching knowledge. This instrument is adapted to the level of each student who, when faced with the test, takes his own route (according to his answers) within an activity bank."
+      },
+      {
+        "sp": "Saber más",
+        "en": "Learn more"
+      },
+      {
+        "sp": "Contenido:",
+        "en": "Content:"
+      },
+      {
+        "sp": "En esta sección se presenta una tabla con la cantidad de aplicaciones de SEA+, por grado, grupo y por área.",
+        "en": "This section presents a table with the number of SEA + applications, by grade, group, and knowledge area."
+      },
+      {
+        "sp": "En esta sección se presentan los niveles de desempeño de los alumnos del centro que realizaron evaluaciones SEA+.",
+        "en": "This section presents the performance levels of the students who took SEA + evaluations."
+      },
+      {
+        "sp": "Estos resultados se organizan por área de conocimiento evaluada y por grado.",
+        "en": "These results are organized by knowledge area evaluated and by grade."
+      },
+      {
+        "sp": "En esta sección se presentan tanto los niveles de desempeño, como los puntajes de los alumnos que realizaron evaluaciones SEA+.",
+        "en": "This section presents both the performance levels and the scores of the students who took SEA + assessments."
+      },
+      {
+        "sp": "Estos resultados se organizan por área de conocimiento evaluada y se permite filtrar por grupo(s) para la visualización de los resultados.",
+        "en": "These results are organized by knowledge area evaluated and filter by group(s) is allowed to visualize the results."
+      },
+      {
+        "sp": "Para cada área se presentan los niveles de desempeño, el tramo de puntaje al que corresponden y su descripción pedagógica.",
+        "en": "For each knowledge area, the performance levels are presented, the scoring section to which they correspond and their pedagogical description."
+      },
+      {
+        "sp": "Cada nivel esta descrito sobre un fondo de color que se mantiene en el resto de las visualizaciones de la app.",
+        "en": "Each level is described on a colored background that is maintained in the rest of the app's visualizations."
+      },
+      {
+        "sp": "Para acceder a la descripción de cada nivel se debe seleccionar el área deseada en el menú lateral.",
+        "en": "To access the description of each level, you must select the desired knowledge area in the side menu."
+      },
+      //intro server      
+      {
+        "sp": "La evaluación adaptativa en línea que denominamos SEA+, es un método eficaz de identificar el nivel de desempeño de los estudiantes y a partir de ello desarrollar acciones que tiendan a brindar oportunidades a todos los niños.",
+        "en": "The online adaptive assessment that we call SEA + is an effective method of identifying the level of student performance and, from there, developing actions that tend to provide opportunities for all children."
+      },
+      {
+        "sp": "A diferencia de otras evaluaciones, ella se adapta al nivel de desempeño progresivo, es decir, a medida que el estudiante responde, si la respuesta es correcta avanza hacia un nivel de desempeño superior y en caso contrario, hacia un nivel inferior. El resultado final, identifica el nivel de desempeño alcanzado y a su vez se describe qué es lo que logra hacer con lo que sabe.",
+        "en": "Unlike other evaluations, it adapts to the progressive performance level, that is, as the student responds, if the answer is correct, it advances to a higher performance level and, if not, to a lower level. The end result identifies the level of performance achieved and in turn describes what you can do with what you know."
+      },
+      {
+        "sp": "El objetivo de SEA+, es construir un referente común de evaluación que permita determinar el dominio de conocimientos adquiridos y a partir de ello, promover entre los docentes y diferentes actores, la reflexión y el análisis de los resultados que lleven a repensar mecanismos de acompañamiento de las diferentes trayectorias educativas.",
+        "en": "The objective of SEA + is to build a common benchmark for evaluation that allows determining the domain of acquired knowledge and, from this, promote reflection and analysis of the results among teachers and different actors that lead to rethinking mechanisms for accompanying different educational paths."
+      },
+      {
+        "sp": "Cerrar",
+        "en": "Close"
+      },
+      {
+        "sp": "En esta seccion se presenta una tabla con la cantidad de aplicaciones de SEA+, por grado, grupo y por área.",
+        "en": "This section presents a table with the number of SEA + applications, by grade, group, and area."
+      },
+      {
+        "sp": "A su vez se permite modificar el ciclo de evaluación a visualizar de modo de poder comparar la cobertura de cada ciclo.",
+        "en": "At the same time, the evaluation cycle to be displayed can be modified so that the coverage of each cycle can be compared."
+      },
+      {
+        "sp": "Resultados del Centro",
+        "en": "School Results"
+      },
+      {
+        "sp": "Resultados:",
+        "en": "Results:"
+      },
+      {
+        "sp": "Transiciones de nivel:",
+        "en": "Performance level transitions:"
+      },
+      {
+        "sp": "Resultados",
+        "en": "Results"
+      },
+      {
+        "sp": "Transiciones de nivel",
+        "en": "Performance level transitions"
+      },
+      {
+        "sp": "Los resultados para cada centro se presentan del mismo modo para cada área, si bien algunas visualizaciones especifican el grado de los alumnos en general se presentan para todo el centro en su conjunto, los mismos se muestran en dos sub pestañas:",
+        "en": "The results for each center are presented in the same way for each area, although some visualizations specify the grade of the students in general they are presented for the whole center as a whole, they are shown in two sub tabs:"
+      },
+      {
+        "sp": "Muestra la distribución de los alumnos por niveles de desempeño y por grado, permite realizar hasta tres comparaciones. Se puede visualizar los resultados históricos del centro y a su vez los resultados a nivel nacional o de la inspección a la que el centro corresponde, teniendo la opción de esta comparación realizarla únicamente con resultados del mismo quintil socio económico. Todas las comparaciones realizadas son acompañadas de los resultados de una prueba de hipótesis en la que se compara la distribución de puntajes de las tres opciones seleccionadas. El resultado de estas pruebas solo se presenta si existen diferencias entre las distribuciones correspondientes a las opciones seleccionadas y si el centro es parte de las mismas. El texto se genera de manera automática y deberá ser revisado.",
+        "en": "It shows the distribution of students by performance levels and grade, allows up to three comparisons. You can visualize the historical results of the center and in turn the results at the national level or the inspection to which the center corresponds, having the option of this comparison to perform it only with results from the same socio-economic quintile. All the comparisons made are accompanied by the results of a hypothesis test in which the distribution of scores of the three selected options is compared. The result of these tests is only presented if there are differences between the distributions corresponding to the selected options and if the center is part of them. The text is generated automatically and should be revised."
+      },
+            {
+        "sp": "Esta pestaña muestra los cambios entre niveles de desempeño de los alumnos que realizaron dos aplicaciones sucesivas de SEA+, contiene una tabla de doble entrada que muestra en las filas los niveles de partida y en las columnas los niveles de llegada y un diagrama de flujos que refleja los resultados de esta tabla. Se puede modificar el año de destino y automática mente se ajusta el año de partida al inmediatamente anterior al mismo.",
+        "en": "This tab shows the changes between performance levels of the students who made two successive SEA + applications, it contains a double entry table that shows the starting levels in the rows and the arrival levels in the columns and a flow chart that reflects the results of this table. The destination year can be modified and the departure year is automatically adjusted to the one immediately prior to it."
+      },
+      {
+        "sp": "Resultados por Grado/Grupo",
+        "en": "Grade/Group Results"
+      },
+      {
+        "sp": "Tabla de puntajes:",
+        "en": "Score table:"
+      },
+      {
+        "sp": "Tabla de puntajes",
+        "en": "Score table"
+      },
+      {
+        "sp": "Los resultados a nivel de grado/grupo para cada centro se presentan de manera muy similar a los resultados a nivel de centro, con la diferencia que permiten visualizar los resultados para uno más grupos de manera específica, estos resultados se presentan en tres sub pestañas:",
+        "en": "The results at the grade / group level for each center are presented in a very similar way to the results at the center level, with the difference that they allow visualizing the results for one more groups in a specific way, these results are presented in three sub tabs:"
+      },
+      {
+        "sp": "Muestra información similar a la presentada en la misma pestaña pero de resultados a nivel de centro. Con la diferencia que el primer gráfico es fijo y refiere a los datos del centro y grupos seleccionados. Se pueden seleccionar múltiples grupos, esto, está pensado principalmente para ver cohortes generacionales. A diferencia de los resultados para el centro estas visualizaciones no están acompañadas de pruebas de hipótesis, podrían agregarse.",
+        "en": "It shows information similar to that presented in the same tab but with results at the center level. With the difference that the first graph is fixed and refers to the data of the center and selected groups. Multiple groups can be selected, this is mainly intended to see generational cohorts. Unlike the results for the center, these visualizations are not accompanied by hypothesis tests, they could be added. It shows information similar to that presented in the same tab but of results at the center level. With the difference that the first graph is fixed and refers to the data of the center and selected groups. Multiple groups can be selected, this is mainly intended to see generational cohorts. Unlike the results for the center these visualizations are not accompanied by hypothesis tests, they could be added."
+      },
+      {
+        "sp": "Esta pestaña muestra los cambios entre niveles de desempeño de los alumnos que realizaron más de una aplicación de SEA+, contiene un gráfico interactivo en el cual se muestra en el eje “y” los puntajes obtenidos y en el eje “x” los ciclos de evaluación, a su vez cada individuo es presentado con un color asociado al nivel de desempeño y una forma asociada al grado. Además al posar el cursor sobre cada alumno se detalla toda la información relativa al mismo en el ciclo de evaluación correspondiente. Luego al igual que en los resultados por centro se presenta un diagrama de flujos que muestra los cambios en niveles de desempeño a lo largo de los ciclos de vacacional para los alumnos de los grupos seleccionados.",
+        "en": "This tab shows the changes between performance levels of the students who made more than one SEA + application, it contains an interactive graph in which the scores obtained are shown on the “y” axis and the evaluation cycles on the “x” axis In turn, each individual is presented with a color associated with the performance level and a shape associated with the grade. In addition, when you place the cursor on each student, all the information related to it is detailed in the corresponding evaluation cycle. Then, as in the results by school, a flow chart is presented that shows the changes in performance levels throughout the vacation cycles for the students of the selected groups."
+      },
+      {
+        "sp": "Muestra para todos los alumnos del grupo seleccionado los resultados de todas las aplicaciones de SEA+, la tabla contiene información relativa al nivel de desempeño, puntaje, duración de la prueba y grado cursado en cada ciclo de evaluación.",
+        "en": "It shows for all the students of the selected group the results of all the SEA + applications, the table contains information related to the performance level, score, test duration and grade taken in each evaluation cycle."
+      },
+      // Cobertura
+      {
+        "sp": "Seleccionar año de evaluación:",
+        "en": "Select evaluation year:"
+      },
+      {
+        "sp": "A continuación se presenta una tabla y un gráfico con las aplicaciones de SEA+ por grado y por área, para el año seleccionado. ",
+        "en": "Below is a table and graph with SEA + applications by grade and by area, for the selected year. "
+      },
+      {
+        "sp": "En la tabla se muestra la cantidad de alumnos de cada grupo y la cantidad de ellos que participaron en cada prueba. ",
+        "en": "The table shows the number of students in each group and the number of them who participated in each test. "
+      },
+      {
+        "sp": "Mientras que en el gráfico se presenta el porcentaje de cobertura de cada grupo.",
+        "en": "While the graph shows the percentage of coverage of each group."
+      },
+      // Resultados Centro
+      {
+        "sp": "Los siguientes gráficos muestran los niveles de desempeño de los alumnos de su centro que aplicaron SEA+.",
+        "en": "The following graphs show the performance levels of the students at your school who applied SEA +."
+      },
+      {
+        "sp": "Esta visualización permite comparar los resultados del centro educativo con resultados a nivel de inspección o nacionales.",
+        "en": "This visualization allows to compare the results of the educational center with results at the inspection or national level."
+      },
+      {
+        "sp": "Es posible, también aplicar diferentes filtros que permiten realizar otras comparaciones: por quintil a nivel nacional o a nivel inspección.",
+        "en": "It is also possible to apply different filters that allow other comparisons to be made: by quintile at the national level or at the inspection level."
+      },
+      {
+        "sp": "Primer Gráfico",
+        "en": "First Chart"
+      },
+      {
+        "sp": "Seleccionar:",
+        "en": "Select:"
+      },
+      {
+        "sp": "Año de evaluación:",
+        "en": "Assessment year:"
+      },
+      {
+        "sp": "Segundo Gráfico",
+        "en": "Second Chart"
+      },
+      {
+        "sp": "Tercer Gráfico",
+        "en": "Third Chart"
+      },
+      {
+        "sp": "En la tabla a continuación se presentan en las columnas los niveles de desempeño obtenidos en el año seleccionado y en las filas los niveles obtenidos en el año previo al seleccionado.",
+        "en": "In the table below the performance levels obtained in the selected year are presented in the columns and in the rows the levels obtained in the year prior to the selected year."
+      },
+      {
+        "sp": "Se indica con color la cantidad de alumnos que mantienen el mismo nivel de desempeño en los dos años de aplicación.",
+        "en": "The number of students who maintain the same level of performance in the two years of application is indicated in color."
+      },
+      {
+        "sp": "Los alumnos que se encuentran por debajo de la franja coloreada, son aquellos que bajaron de nivel, mientras que los alumnos que se encuentran sobre la franja son aquellos que subieron de nivel.",
+        "en": "The students who are below the colored strip are those who have lowered their level, while the students who are above the strip are those who have leveled up."
+      },
+      {
+        "sp": "En el gráfico se muestra la transición entre los niveles de desempeño que refleja los movimientos entre niveles que se muestran en la tabla.",
+        "en": "The graph shows the transition between the levels of performance that reflects the movements between levels shown in the table."
+      },
+      // Resultados Grado/Grupo
+      {
+        "sp": "Seleccionar grupo correspondiente al año ",
+        "en": "Select group corresponding to the year "
+      },
+      {
+        "sp": "Los siguientes gráficos muestran los niveles de desempeño de los alumnos de su centro que aplicarion SEA+.",
+        "en": "The following charts show the performance levels of the students at your school who applied SEA +."
+      },
+      {
+        "sp": "Si selecciona varios grupos, el gráfico mostrará el total del alumnado. De esta manera se puede ver la distribución de niveles de desempeño de todos los 3ros, por ejemplo, o de un ciclo si se seleccionan todos los 3ros y todos los 4tos.",
+        "en": "If you select several groups, the graph will show the total number of students. In this way you can see the distribution of performance levels of all 3rd, for example, or of a cycle if all 3rd and all 4th are selected."
+      },
+//      {
+//        "sp": "Esta visualización permite comparar los resultados del centro educativo con resultados a nivel de inspección o nacionales.",
+//        "en": "This visualization allows to compare the results of the educational center with results at the inspection or national level."
+//      },
+      {
+        "sp": "Es posible realizar comparaciones, también, con los resultados del año anterior, ya que debajo aparecen los gráficos con esos datos.",
+        "en": "It is possible to make comparisons, also, with the results of the previous year, since the graphs with these data appear below."
+      },
+      {
+        "sp": "En esta visualizacion el primer grafico hace referencia a los resultados del centro para el grado o grupo seleccionado.",
+        "en": "In this visualization the first graph refers to the results of the center for the selected grade or group."
+      },
+      {
+        "sp": "El gráfico presenta la transición de nivel y puntaje de cada alumno en todas sus aplicaciones de SEA+ del área identificando el grado que cursó en cada año.",
+        "en": "The graph presents the transition of level and score of each student in all their SEA + applications in the area, identifying the grade they took each year."
+      },
+      {
+        "sp": "En el gráfico de las transiciones entre niveles aparecen unicamente los alumnos que realizaron todas las aplicaciones.",
+        "en": "Only the students who made all the applications appear in the graph of the transitions between levels."
+      },
+      // Niveles de desempeño
+      {
+        "sp": "Descripción niveles",
+        "en": "Performance level description"
+      },
+      {
+        "sp": "Escuela",
+        "en": "School"
+      }
+      
+    ]
+}
