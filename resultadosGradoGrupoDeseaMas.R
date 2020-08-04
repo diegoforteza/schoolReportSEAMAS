@@ -70,6 +70,13 @@ resultadosGradoGrupoDeseaMasUI <- function(id){
       
       tabPanel(i18n$t("Tabla de puntajes"),
                fluidRow(
+                 column(2, checkboxInput(ns("mostrarGrado"), label = "Mostrar Grado", value = TRUE)),
+                 column(2, checkboxInput(ns("mostrarNivel"), label = "Mostrar Nivel", value = TRUE)),
+                 column(2, checkboxInput(ns("mostrarPuntaje"), label = "Mostrar Puntaje", value = TRUE)),
+                 column(2, checkboxInput(ns("mostrarDuracion"), label = "Mostrar Duración", value = TRUE))
+               ),
+               br(),
+               fluidRow(
                  div(style="overflow-x: scroll;",
                      DT::DTOutput(ns("tablaAlumnos")))
                )        
@@ -156,7 +163,7 @@ resultadosGradoGrupoDeseaMas = function(input, output, session, areaCodigo){
                                                        input$gradoCodigo_gradoGrupo)];
       }
     }
-
+    
     if(alumnoNombre){
       bux <- alumno[, c("AlumnoCodigo", "Nombre")];
     } else {
@@ -179,14 +186,14 @@ resultadosGradoGrupoDeseaMas = function(input, output, session, areaCodigo){
     tryCatch({ plotNivelesTAIxGradoGrupo(input, areaCodigo = areaCodigo) }, 
              error=function(e){ 
                plotHandler("Debe seleccionar un grupo para visualizar los resultados") } )
-    });
+  });
   
   ###  tabPanel2
   output$graficoTransicionesGradoGrupo <- renderPlot({
     tryCatch({ alluvialPlot( wideData(), cols=levels(myData$color)  ) }, 
-      error=function(e){ 
-        plotHandler("Debe seleccionar un grupo para visualizar los resultados") } )
-    });
+             error=function(e){ 
+               plotHandler("Debe seleccionar un grupo para visualizar los resultados") } )
+  });
   
   output$graficoTrayectoriasGradoGrupo_plotly <-  renderPlotly({
     tryCatch({ 
@@ -206,7 +213,6 @@ resultadosGradoGrupoDeseaMas = function(input, output, session, areaCodigo){
         plotHandler("Debe seleccionar un grupo para visualizar los resultados") } )
   });
   
-
   # output$graficoTrayectoriasGradoGrupo <- renderPlot({
   #   cols <- levels(longData()$color)
   #   
@@ -234,15 +240,46 @@ resultadosGradoGrupoDeseaMas = function(input, output, session, areaCodigo){
       aux;
     }, error=function(e){ data.frame() })
     
-    DT::datatable(aux,
-                  filter=c("top"), 
-                  selection=c("multiple"), 
-                  rownames=FALSE, 
-                  escape=FALSE,
-                  options=list(#language = list(zeroRecords = "No records to display - custom text"), 
-                    pageLength=10, autoWidth=TRUE,
-                    lengthMenu = c(4, 6, 8, 10, 15, 20)) )},
-    options=list(scrollX=TRUE)
+    targetsToHide <- NULL
+    if(!input$mostrarGrado) targetsToHide <- c(targetsToHide, (grep("Grado", names(aux))-1) );
+    if(!input$mostrarNivel) targetsToHide <- c(targetsToHide, (grep("Nivel", names(aux))-1) );
+    if(!input$mostrarPuntaje) targetsToHide <- c(targetsToHide, (grep("Puntaje", names(aux))-1) );
+    if(!input$mostrarDuracion) targetsToHide <- c(targetsToHide, (grep("Durac", names(aux))-1) );
+    
+    myDT <- DT::datatable(aux,
+                          filter=c("top"), 
+                          selection=c("multiple"), 
+                          rownames=FALSE, 
+                          escape=FALSE,
+                          options=list(
+                            language = list(zeroRecords = "No records to display - custom text",
+                                            search = 'Filter:'),
+                            pageLength=10, autoWidth=FALSE,
+                            columnDefs = list(list(targets=targetsToHide, visible = FALSE)),
+                            # The column index can catch you off guard. It start from 0 but row name is counted as column 0. 
+                            # So the index depend on if you enabled row names. – dracodoc Jul 11 '19 at 18:17
+                            lengthMenu = c(4, 6, 8, 10, 15, 20)) 
+    ) 
+    
+    if(nrow(aux) > 0){
+      anios <- regmatches(names(aux), gregexpr("[[:digit:]]+", names(aux)))
+      anios <- unique(unlist(anios))
+      
+      for(i in 1:length(anios)){
+        myDT <- myDT %>%
+          DT::formatStyle(paste0('Nivel<br>', anios[i]),
+                          backgroundColor = DT::styleEqual(coloresNiveles$PruebaNivelTAIDesc,
+                                                           coloresNiveles$color) ) %>%
+          DT::formatStyle(paste0('Puntaje<br>', anios[i]), paste0('Nivel<br>', anios[i]),
+                          backgroundColor = DT::styleEqual(coloresNiveles$PruebaNivelTAIDesc,
+                                                           coloresNiveles$color) );
+      }
+    }
+    #DT::formatStyle("Puntaje_2019", "Ganancia_2019", backgroundColor = DT::styleInterval(brks, clrs))
+    
+    myDT
+  },
+  options=list(scrollX=TRUE)
   );
   
   

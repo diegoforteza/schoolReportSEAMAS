@@ -24,14 +24,21 @@ nivelesDeseaMas = function(input, output, session, areaCodigo){
   
   descripcionNiveles <- reactive({
     # aux <- getSTD_nivelesTAI(areaCodigo) %>% ## this should load an rda
-    aux <- nivelesTAI %>% filter(AreaCodigo == areaCodigo) %>%
+    aux <- nivelesTAI %>% filter(AreaCodigo == areaCodigo);
+    aux$PruebaNivelTAIPunInicial <- sub("^0$", "-Inf", aux$PruebaNivelTAIPunInicial);
+    aux$PruebaNivelTAIPunFinal <- paste0(aux$PruebaNivelTAIPunFinal, "]");
+    aux$PruebaNivelTAIPunFinal <- sub("2000]", "Inf)", aux$PruebaNivelTAIPunFinal);
+    
+    aux <- aux %>%
       mutate(
-        Nivel=paste(PruebaNivelTAIDesc, '\n (', PruebaNivelTAIPunInicial, '-', PruebaNivelTAIPunFinal, ')'),
+        Nivel=paste0(PruebaNivelTAIDesc, '\n (', PruebaNivelTAIPunInicial, '; ', PruebaNivelTAIPunFinal),
         color=as.character(factor(PruebaNivelTAIDesc, levels=levels(myData$Nivel), labels=levels(myData$color)))
       );
     aux$PruebaNivelTAIDescPedagoica <- gsub("\\n", "<br>", aux$PruebaNivelTAIDescPedagoica);
     # aux$PruebaNivelTAIDescPedagoica <- gsub("\\u0095", "\\&bull;", aux$PruebaNivelTAIDescPedagoica);
     # aux$PruebaNivelTAIDescPedagoica <- gsub("\u0095", "\u2022", aux$PruebaNivelTAIDescPedagoica);
+
+    
     aux;
   })
   

@@ -8,8 +8,8 @@ plotCobertura = function(cobertura){
   
   aux <- cobertura %>% 
     mutate("Ciencias"=ifelse(is.nan(nAlumnosCie/nAlumnos), 0, round(nAlumnosCie/nAlumnos, 2)*100),
-           "Lectura"=ifelse(is.nan(nAlumnosLec/nAlumnos), 0, round(nAlumnosCie/nAlumnos, 2)*100), 
-           "Matemática"=ifelse(is.nan(nAlumnosMat/nAlumnos), 0, round(nAlumnosCie/nAlumnos, 2)*100)) %>% 
+           "Lectura"=ifelse(is.nan(nAlumnosLec/nAlumnos), 0, round(nAlumnosLec/nAlumnos, 2)*100), 
+           "Matemática"=ifelse(is.nan(nAlumnosMat/nAlumnos), 0, round(nAlumnosMat/nAlumnos, 2)*100)) %>% 
     pivot_longer(cols=c("Ciencias", "Lectura", "Matemática"), values_to = "Cobertura")
   
   aux <- aux %>% arrange(GradoCodigo, GrupoNombre) %>% arrange(desc(Año));

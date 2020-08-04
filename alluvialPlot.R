@@ -28,7 +28,7 @@ alluvialPlot = function(myPlotData, cols=NULL){
         # cols <- levels(myData$color)
         
         if(nrow(data_allu) > 0){
-          data_lodes <- to_lodes_form(data_allu, axes = 1:(ncol(data_allu)-1))
+          data_lodes <- to_lodes_form(data_allu, axes = (ncol(data_allu)-1):1)
           
           ggAlluvial <- ggplot(data_lodes, aes(x = x, stratum = stratum, alluvium = alluvium,
                                                y = Freq, fill = stratum, label = stratum)) +

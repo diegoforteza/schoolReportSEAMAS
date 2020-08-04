@@ -22,7 +22,8 @@ coberturaDeseaMasUI <- function(id){
     br(),
     fluidRow(
       column(width = 4, htmlOutput(ns("tablaCobertura"))),
-      column(width = 8, plotOutput(ns("graficoCobertura"))),
+      # column(width = 4, DT::DTOutput(ns("tablaCobertura"))),
+      column(width = 8, plotOutput(ns("graficoCobertura")))
     )
     
   )
@@ -46,12 +47,23 @@ coberturaDeseaMas = function(input, output, session){
       filter(nAlumnos != 0);
   })
     
-  output$tablaCobertura <- renderTable({ 
-    cobertura_reactive() %>% 
+  output$tablaCobertura <- renderTable({
+    cobertura_reactive() %>%
       select(Grupo, nAlumnos, nAlumnosCie, nAlumnosLec, nAlumnosMat) %>%
-      dplyr::rename("Alumnos"=nAlumnos, 
+      dplyr::rename("Alumnos"=nAlumnos,
              Ciencias=nAlumnosCie, Lectura=nAlumnosLec, "Matemática"=nAlumnosMat)
-    }, include.rownames=FALSE, digits = 0);
+    }, include.rownames=FALSE, digits = 0, width=4);
+  
+  # output$tablaCobertura <-  DT::renderDT({
+  #   aux <- cobertura_reactive() %>%
+  #     select(Grupo, nAlumnos, nAlumnosCie, nAlumnosLec, nAlumnosMat) %>%
+  #     dplyr::rename("Alumnos"=nAlumnos,
+  #                   Ciencias=nAlumnosCie, Lectura=nAlumnosLec, "Matemática"=nAlumnosMat)
+  # 
+  #   myDT <- DT::datatable(aux, options = list(autoWidth=FALSE) )
+  # }, include.rownames=FALSE, digits = 0, width="33%");
+  
+  
   
   output$graficoCobertura <- renderPlot({ plotCobertura(cobertura_reactive()) });
   
